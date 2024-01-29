@@ -1,0 +1,835 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1002,3894" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mg="clr-namespace:Microsoft.Graph;assembly=Microsoft.Graph" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Testing.Enums</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Excel.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Master" sap:VirtualizedContainerService.HintSize="1012,3829" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="contraseniaTest" />
+      <Variable x:TypeArguments="x:String" Name="emailTest" />
+      <Variable x:TypeArguments="sd:DataTable" Name="vDtbExcelArtistas" />
+      <Variable x:TypeArguments="x:Int32" Name="nroFila" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="ReadDatosLoginArtistas" sap:VirtualizedContainerService.HintSize="950,25" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,1452" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="ReadDatosLogin" sap:VirtualizedContainerService.HintSize="540,746" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\zahis\OneDrive\Escritorio\TestSpotify\UsuarioSpotify.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,473" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Hoja1&quot;).Cell(&quot;F2&quot;)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="444,161" sap2010:WorkflowViewState.IdRef="ReadCellValueX_2">
+                      <ueab:ReadCellValueX.SaveTo>
+                        <OutArgument x:TypeArguments="x:String">[EmailTest]</OutArgument>
+                      </ueab:ReadCellValueX.SaveTo>
+                    </ueab:ReadCellValueX>
+                    <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Hoja1&quot;).Cell(&quot;E2&quot;)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="444,161" sap2010:WorkflowViewState.IdRef="ReadCellValueX_3">
+                      <ueab:ReadCellValueX.SaveTo>
+                        <OutArgument x:TypeArguments="x:String">[ContraseniaTest]</OutArgument>
+                      </ueab:ReadCellValueX.SaveTo>
+                    </ueab:ReadCellValueX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="ReadDatosArtistas" sap:VirtualizedContainerService.HintSize="540,555" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="ArtistasSpotify.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="ExcelArtistas" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,282" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,171" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[ExcelArtistas.Sheet(&quot;Hoja1&quot;)]" SaveTo="[vDtbExcelArtistas]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Browser" sap:VirtualizedContainerService.HintSize="950,3653" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" IsIncognito="False" ScopeGuid="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="916,3436" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="854,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+              <uix:NMouseScroll.SearchedElement>
+                <uix:SearchedElement>
+                  <uix:SearchedElement.Target>
+                    <uix:TargetAnchorable BrowserURL="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es" DesignTimeRectangle="522, 296, 324, 32" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Recordarme'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='sc-dIfARi sc-hHTYSt jDOQRe eMYNEd' parentid='root' tag='DIV' aaname='' check:innerText='Recordarme' /&gt;" Guid="fb350c64-801e-4516-b44b-718ef8669be8" InformativeScreenshot="c3f42e453157a4edcc1ecb89a59084bc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Iniciar sesión - Spotify' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                  </uix:SearchedElement.Target>
+                  <uix:SearchedElement.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:SearchedElement.Timeout>
+                </uix:SearchedElement>
+              </uix:NMouseScroll.SearchedElement>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NMouseScroll>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email o'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="854,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Text="[EmailTest]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es}" DesignTimeRectangle="511, 253, 354, 89" DesignTimeScaleFactor="1" FriendlyName="'msedge.exe Iniciar'" Guid="144dd261-8756-4e07-9cf2-821e552c83d1" ImageBase64="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" InformativeScreenshot="2b777a90c989b74f4d96b4bd723cf12b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Iniciar sesión - Spotify' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="522, 258, 172, 20" ElementType="Text" FriendlyName="'Email o'" FullSelectorArgument="&lt;webctrl aaname='Email o nombre de usuario' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email o nombre de usuario' tag='SPAN' type='' class='LabelInner-sc-19pye2k-0 LnTCl' check:innerText='Email o nombre de usuario' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="BottomLeft" X="90" Y="-32" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'msedge.exe Iniciar'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="854,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Text="[ContraseniaTest]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es}" DesignTimeRectangle="516, 347, 339, 87" DesignTimeScaleFactor="1" FriendlyName="'msedge.exe Iniciar'" Guid="d5824d0d-23ae-4fc8-b4d6-32eb75127bd7" ImageBase64="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" InformativeScreenshot="2554fec1e5951d27e66ef389db92e3eb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Iniciar sesión - Spotify' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="810, 391, 24, 21" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg&amp;gt;path' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='path' class='' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="BottomLeft" X="93" Y="-35" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Iniciar Sesión'" sap:VirtualizedContainerService.HintSize="854,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es" DesignTimeRectangle="522, 360, 324, 48" DesignTimeScaleFactor="1" FriendlyName="'Iniciar Sesión'" FullSelectorArgument="&lt;webctrl parentid='login-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login-button' tag='SPAN' type='' class='ButtonInner-sc-14ud5tc-0 cJdEzG encore-bright-accent-set' aaname='' check:innerText='Iniciar Sesión' /&gt;" Guid="6f048184-1111-49aa-b1ea-9d38c888a559" InformativeScreenshot="c9ba4f433e58b1816db201354147c89e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Iniciar sesión - Spotify' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'msedge.exe Reproductor'" sap:VirtualizedContainerService.HintSize="854,157" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es?flow_ctx=ee2c691e-4b01-445f-9ef7-22e6f5b398e5%3A1706311196" DesignTimeRectangle="34, 177, 128, 46" DesignTimeScaleFactor="1" FriendlyName="'msedge.exe Reproductor'" Guid="4e044e61-403a-45b5-95fa-583689f77a62" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAAAuCAYAAADgKBFVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUMSURBVHhe7ZntSyJbGMDv32DEhEQixLW4FRokSx8uWtAHLcooI8bAG/RluSShvdANXC6BuLG5lVtZiyENkQRSzR/43HnOeHTUYzrtpHXP+fBjc87zHGd9fnPe5jebzQYCfhECcI4QgHOEAJwjBOAcIQDnCAE4RwjAOUIAzhECcI4QgHOEAJxjiQButxtkWYadnR1IpVKwu7sLkUgExsfHmfGC98MvCRAMBuHy8hJUVW3K1dUVzM7OMvMF3edVAvT09MDW1lZNkePxOKysrIDP54Pl5WXY3NyskQPjMY/Vn6B7vEoAHOqxqM/Pz7C6utq0sHgd25+enkg85rHiBN3DtADhcJgUE4vq9/uZMfVgHJVgcXGRGSPoDqYE6OvrA0VRSCFDoRAzphlYeMwrFArQ29vLjBF0HlMCBAIBUsSzszNmeysuLi5I/vT0NLPdauRvtQtSQkmBbDwILomdwxumBDg4OCA/otmnn4KLRMzf3t5mtlsNU4AyxX/am77+75gSAJ98/PFw389qbwWeC2D+a0cQs1ABlLhXvyb1w8yePoWphQR46+J5xJQA19fX5McbHh5mtrfC6XSS/NvbW2a71bwowGkUnCROhgx+VhVIfKK5jGt2L0RTeSiR6yqUlBwkIx6QSLyG5ILgZgbyD3o7TjW5L1Hw2svttnJ7saS3Yx8/M7Dhk8rtNvDG9XtTvmzA/oUel1ml+W+DKQGOj4/JTU1MTDDbWzE6OkrysR9Wu9U0nQIKSQj9TuPaEcCp9VUtHOGxBMpVEsKkH1djO+Umpo80vg3I/CxWBKqShahT/14qgJF3JQAe9uBN4VzOam8Frh0wHw+FWO1W03wNUIT0qqsc144Afti/w885iLmrT2yF+cNyYfOQnHORUUEai0LmDiU5hOhEXbxNAqfbD4krzKkWuSpAtZ/aPOsxJQDu5/EG8YSP1d6KbDZL8vEsgdVuNQ1TgPbDj/yV0YtVOoQQ2Qm0NwKEvxqG7qI2vKdiEBzWZagU7rv8QtEk8ETSkC/pfRhpEODFfqzFlAC4f7+5uSE3OT8/z4xpxtzcHMm7v78Hh8PBjLGaRgGQ+uK2I4CG5IFwvHYOVx/SENaG77YK9ykBCs3TKBW16eBR/7tBgG9yY/4bYUoAZGFhgdzkw8MDDA0NMWPqwUUjxmMeniWwYt6CF0cAbTj//AdeC0OafFYhv+PXCiiBK0JjjFIYsM9AkkwJKqQXtc+BZHUKmB8hEpApQJOFTgHerTyJV39skMWn5JiB/YLex4cSAKFrASzq0tLSi+8CcL1Ai4/HwWNjY8zYt6D5GkB7Ar+Gy7sACUL/NlnAUQEcQYidajuA8hNbhS7gWi8CKwIw+HACYGFjsVjlP3B+fk5EmJycrIAvgYxvA+/u7ir/vnYbaRamANrqPZ+SwWM8CdSGd7myxcP2BKQV/FsT4E+M0UaFuQRkC4Z1gJKFRIAuJJG6beBjUdsGGr6n5jtUKJ5+BnlHL3ju7xES82EEoOB7fno20IxcLgdTU1Ngt9vh5OSEXMNzAJfL+OMJusUvCUDxeDywtrZGXvem02k4OjqCvb09cuZvnB76+/srOwFcTA4ODtb0I+g8lghghoGBATIqoAT5fL5jOwIBm44LgGDR6dSBawVWjKAzdEUABN8LrK+vixGgy3RNAMH7QAjAOUIAzhECcI4QgHOEAJwjBOAcIQDnCAE4RwjAOUIAzhECcI0N/gN2H3EkdHkk4QAAAABJRU5ErkJggg==" InformativeScreenshot="d5ecaf1a5c6831adc2bbf46bee0ccc5d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reproductor web de Spotify: música para todo el mundo' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="20, 120, 353, 112" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl tag='UL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='UL' type='' class='QuHe04rU4bj0Z5U9E2Tk' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="854,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[NroFila]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">2</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[vDtbExcelArtistas]" DisplayName="For Each Row Data Table Artistas" sap:VirtualizedContainerService.HintSize="854,1947" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="568,1761" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="duracionCancion" />
+                      <Variable x:TypeArguments="x:String" Name="nombreCancion" />
+                      <Variable x:TypeArguments="x:String" Name="cantRepros" />
+                      <Variable x:TypeArguments="x:Int32" Name="bucleCanciones">
+                        <Variable.Default>
+                          <Literal x:TypeArguments="x:Int32" Value="5" />
+                        </Variable.Default>
+                      </Variable>
+                      <Variable x:TypeArguments="mg:WorkbookApplication" Name="existingColumns" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="526,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="526,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Text="[CurrentRow(&quot;Artista&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://open.spotify.com/search" CvTextArea="478, 145, 174, 16" CvTextArgument="¿Que te apetece escuchar?" CvType="Text" DesignTimeRectangle="422, 128, 364, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='INPUT' class='Text__TextElement-sc-if376j-0 gYdBJW encore-text-body-small QO9loc33XC50mMRUCIvf' aaname='' /&gt;" Guid="d1f34870-eb2d-4fae-800c-d4e7b4882817" InformativeScreenshot="8935f9b69d3564be54e1b4b15f3bef01.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Spotify – Buscar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Delay Duration="00:00:01.9980000" sap:VirtualizedContainerService.HintSize="526,90" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Resultado principal'" sap:VirtualizedContainerService.HintSize="526,157" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://open.spotify.com/search/Maria%20Becerra" DesignTimeRectangle="850, 447, 48, 48" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' parentid='searchPage' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='searchPage' tag='SPAN' class='ButtonInner-sc-14ud5tc-0 bbkSuf encore-bright-accent-set' aaname='' /&gt;" Guid="5521ad58-7570-473b-b324-8acf46d87b26" InformativeScreenshot="9e793c6c5febc57dd2b2fb1a8a6f5b30.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Spotify – Buscar' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="468, 254, 198, 27" CvTextArgument="Resultado principal" CvType="Text" DesignTimeRectangle="464, 256, 454, 29" FriendlyName="'Resultado principal'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div' parentid='searchPage' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='searchPage' tag='DIV' class='onVWL7MW4PW9FyVajBAc' aaname='' check:innerText='Resultado principal' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="526,90" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Resultado principal'" sap:VirtualizedContainerService.HintSize="526,157" sap2010:WorkflowViewState.IdRef="NClick_35" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://open.spotify.com/search/Maria%20Becerra" DesignTimeRectangle="850, 447, 48, 48" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' parentid='searchPage' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='searchPage' tag='SPAN' class='ButtonInner-sc-14ud5tc-0 bbkSuf encore-bright-accent-set' aaname='' /&gt;" Guid="5521ad58-7570-473b-b324-8acf46d87b26" InformativeScreenshot="9e793c6c5febc57dd2b2fb1a8a6f5b30.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Spotify – Buscar' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="468, 254, 198, 27" CvTextArgument="Resultado principal" CvType="Text" DesignTimeRectangle="464, 256, 454, 29" FriendlyName="'Resultado principal'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div' parentid='searchPage' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='searchPage' tag='DIV' class='onVWL7MW4PW9FyVajBAc' aaname='' check:innerText='Resultado principal' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[BucleCanciones &lt;&gt; 0]" DisplayName="Do While bucleCanciones &lt;&gt; 0" sap:VirtualizedContainerService.HintSize="526,509" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                      <ui:InterruptibleDoWhile.Body>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="492,373" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="tipoCancion" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="Get DuracionCancion y NombreCancion" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGetText DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" TextString="[DuracionCancion]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://open.spotify.com/search/Maria%20Becerra" CvTextArea="918, 694, 27, 12" CvType="AnyWordGroup" DesignTimeRectangle="919, 692, 40, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'5:38'" FullSelectorArgument="&lt;webctrl aaname='5:38' parentid='main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='main' tag='DIV' type='' class='Text__TextElement-sc-if376j-0 duYgEj encore-text-marginal npFSJSO1wsu3mEEGb5bh' /&gt;" Guid="98822fae-1b22-46d0-a469-4bfabce2a696" InformativeScreenshot="71be65a9b97b6f7c06752a69660ac279.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Spotify – Buscar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                      <uix:Target DesignTimeRectangle="471, 694, 441, 12" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;footer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='w699O0LgQRghXyl3bs9u' parentid='main' tag='DIV' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                      <uix:Target DesignTimeRectangle="1037, 664, 32, 32" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl aria-label='Vista Sonando' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;footer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Vista Sonando' type='' tag='BUTTON' class='Button-sc-1dqy6lx-0 emaScS KAZD28usA1vPz5GVpm63' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '0:18Cambiar punto'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es?flow_ctx=7d051666-1488-4d7c-8000-7afb17a27081%3A1706509645" DesignTimeRectangle="418, 658, 531, 57" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'0:18Cambiar punto'" FullSelectorArgument="&lt;webctrl aria-label='Controles del reproductor' tag='DIV' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aria-label='Controles del reproductor' tag='DIV' type='' class='player-controls' aaname='' /&gt;" Guid="6e4028a0-1882-4151-bb28-a0df5abae14b" ImageBase64="" InformativeScreenshot="3831e2cbfe3e7deb397b78e00fcbba56.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Reproductor web de Spotify: música para todo el mundo' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset Position="TopLeft" X="-305" Y="21" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="Get Text 'Cupido'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" TextString="[NombreCancion]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/album/3HWlgRjxW0H7fWm1n2LBbE" CvTextArea="663, 300, 314, 94" CvType="AnyWordGroup" DesignTimeRectangle="531, 308, 495, 96" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Cupido'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='Text__TextElement-sc-if376j-0 ksSRyh encore-text-headline-large' /&gt;" Guid="7f4ee025-f3ba-459e-ad26-5e886c5efa83" InformativeScreenshot="eb5b5bc8ec18161d44d524c2214cd896.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Miénteme • TINI, Maria Becerra' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                          </Sequence>
+                          <Sequence DisplayName="GetCantRepros" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGetText DisplayName="Get Text 'Álbum'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" TextString="[TipoCancion]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/album/1PuH88Md0tzB8UrnBfboJA" CvTextArea="701, 263, 45, 16" CvType="AnyWordGroup" DesignTimeRectangle="608, 246, 310, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Álbum'" FullSelectorArgument="&lt;webctrl aaname='Álbum' parentid='main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='main' tag='SPAN' type='' class='Text__TextElement-sc-if376j-0 gYdBJW encore-text-body-small lp9Tfm4rsM9_pfbIE0zd' /&gt;" Guid="a06e99cf-1a64-4f54-8317-de6eea6e95f3" InformativeScreenshot="a0c2623cb247947acb180336bbb6c6e7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Vida de Rico • Camilo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <If Condition="[TipoCancion &lt;&gt; &quot;Sencillo&quot;]" DisplayName="If TipoCancion = Sencillo" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="If_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="376,1395" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/album/6qW93Zylfk7oxZ8ZzwjkL5" CvTextArea="592, 635, 20, 17" CvTextArgument="X" CvType="Text" DesignTimeRectangle="418, 687, 531, 32" DesignTimeScaleFactor="1" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;footer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='player-controls__buttons player-controls__buttons--new-icons' parentid='main' tag='DIV' aaname='' /&gt;" Guid="7fbcefb0-5898-43e4-b2d5-fc32d5334efd" InformativeScreenshot="8a87e2bfcc5ab8e7fc334d810d6564be.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Entre Nosotros (Remix) [con Nicki Nicole] • Tiago PZK, LIT killah, Maria Becerra, Nicki Nicole' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CvElementArea="630, 630, 25, 25" CvType="Icon" DesignTimeRectangle="716, 687, 32, 32" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl aria-label='Anterior' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Anterior' tag='BUTTON' type='' class='fn72ari9aEmKo4JcwteT' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEGSURBVFhHzdUxCoNAFEXRYG9v5xJciWsQ7HQPlroFbSysbBUX+BMDgTFcR9PkTeAUuTPMFzTx8fpYYDAqYVTCqIRRCaMSRiWMShiVMCphVMKIhmGwbdus73tcd6Vpal3X2TRNuO6BEe0X80HruziOraoqW9f1cu8JjMh3QVEUWZ7nNs/zYR/tvYARnQ3Jsux9G911l7v3Bozoe0iSJNY0zaGT73MuYETukLIsbVmWQztDZ3lgRDTsDjrLAyOiYXfQWR4YkTukKIqwbtn+PaiH2u3B/OxdQf0xuvZXR13X/3l1/PpybdvWxnHEdQ+MShiVMCphVMKohFEJoxJGJYxKGJUwijzsCeDNLLbZ+rs5AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                                            <uix:Target CvElementArea="630, 630, 25, 25" CvType="Icon" DesignTimeRectangle="629, 696, 14, 14" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;footer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg&amp;gt;path' idx='3' parentid='main' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='main' tag='path' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC8SURBVDhPvZMxDoQgEEWNvT2dR+AknIHETu9gCVeQhoKKVuMB/8oSk0HRxJUsyUvGP9+fjDLVdlCIrPgLsTDGYF1XTNN0NJxo2xZaazjnqB6LELJDmglN06DveyzLkvPG4i6ormsIIeC9T3wHbywumuCcf8elfQrx5oMYYxjHMdFz7O9vnIO6rsM8z4l2xW3QE/4TJKUsM1p4LvKxSfP976cUuZCUsCLDMNyvyNOlVUrBWkv11PSCrPiQCh/fsWRGdJjaiQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                        <uix:TargetAnchorable.PointOffset>
+                                          <uix:PointOffset Position="BottomLeft" X="-305" Y="-12" />
+                                        </uix:TargetAnchorable.PointOffset>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'msedge.exe Qué'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/album/3iYC1GqtQVjnO63aYDs1nL?highlight=spotify:track:2bNCiY24Eh4saMcc23bvUN" DesignTimeRectangle="113, 418, 200, 38" DesignTimeScaleFactor="1" FriendlyName="'msedge.exe Qué'" Guid="fd0d995b-8ddb-4f35-8df4-c37eb08b4d12" ImageBase64="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" InformativeScreenshot="85452b9d2f9625fd10233045529bb081.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Qué Más Pues? • J Balvin, Maria Becerra' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll 'SPAN'" sap:VirtualizedContainerService.HintSize="334,257" sap2010:WorkflowViewState.IdRef="NMouseScroll_6" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                                    <uix:NMouseScroll.SearchedElement>
+                                      <uix:SearchedElement>
+                                        <uix:SearchedElement.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/album/6qW93Zylfk7oxZ8ZzwjkL5" CvElementArea="386, 391, 62, 61" CvType="Icon" DesignTimeRectangle="389, 395, 56, 56" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' parentid='main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='main' tag='SPAN' class='ButtonInner-sc-14ud5tc-0 fGgTkO encore-bright-accent-set' aaname='' /&gt;" Guid="1ca75e9b-22b4-43ad-b40f-e03c946dede4" ImageBase64="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" InformativeScreenshot="ac730bbc615d2db3a1b5e4cebb00e9be.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ASI ES LA VIDA • Enrique Iglesias, Maria Becerra' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvElementArea="472, 400, 41, 40" CvType="Icon" DesignTimeRectangle="477, 407, 32, 32" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl aria-role='img' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' parentid='main' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='img' type='' parentid='main' tag='svg' class='Svg-sc-ytk21e-0 cqasRA' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVCSURBVFhHtVdbT1RJED6/QDTeHrybaLwLDDMDcWAEBQQEg8gIskoIJiIsCxt5WBNBFAwiCygCq8hNQfiZvVU1XTXVPecMvvjwTdflq0v36T6nJ0ju32+SRUU5aD1KRuzb5+q/Cs4TER8k4IcABALrbPPlMBvLUb4wP9s8OdeQcmCnKO81+sDZO7q248oU8ls9oAaYqBykW1SfOGHa4nHzrLXVPKmtNbfPns35o2YNY/r4cXMf4u6XlZnUkSP5fN2gtQdi9BMDehoazMLMjNnd3c3D6pcvpr+9PZtUTag1FjPjL16Yr4uLeTGz795lY7w6AogP4rYRPd46fdoszc/nJQzD9OvXpvrkSZM6etS8Ghw0Ozs7oTyNTx8+mNpz52gR4rYZGkHPNWQddUBcX1lxErwZGTFPW1pMe0WF6b1714wODZnN9XXxb6yuEljfXFsjztPmZvPo5k0z0ttLTbCfOBBfc+oU1RTwCmEzPM5OTkrQ8seP1CD5Lbj58kOHzD99fU4RxNjwsEkfO+asOMc0XrxoPk1PC/ffiQmHhxzaQ1ysu75eyJ9nZ00aNjPtD8WhmSj5j5oa83Vpyfy3sGC6QGYe+TFW6XGrY26uk7lxw6kRCBk6fD86KsSmK1dyiRQnVFZ6mTcyRIex/sIFqYOPVvOkoQp4BNtbW0TCR4WBemUcRNk1wuKVPj81RbW+b2yY8oMHxS4NNV+/Ll0PdnWZMmvHmaGsdb06siKs4wiFxR4SjzLW4HpN166JP2Cho6pKCP0PHwrBWQ2W1Ug8XwdIvLU7MmAAanC9TColdmoIgUYm/NnZmZ0JEPQMHfh21qPsnqxX6AG8TtAnDWHneqPhy06SoB8bUzLyw/z+SBOyutgsZt6+lXp1588LN4ghwQbg8WVS49WrToIoxHDWABpZx1FxHIC/paRE6qwsL1Nt5ssjQ/RnMkJ8PzaW7ZqBnLDRh80l0DYrT4+PS52+tjbHTyvESMLxW5ybE/IA7CWcMflx5hCg9RgWYN1HmB1sAx0dkh+/lwmoqTkBd40KyncuX5YAREc6nfVrnuJzIt/OPi1nKiud3HcuXaIYzXVWiACzeASfAA7a+vHDNECT2q/5paBzwkKoh+8Y5uK8WAMn6eeTTa2NqA89fizBePephMsWJdB8rTNsDu2vgm8ibl7O9xfk1n5dPyi1QqntlHUkT758KUnm4FWfPHxY/DgyJA5yODrkSMAniT8TiAnIiQ04PDVmHxl2yFB6EpLpG+M43IvYxwX9hOxnGWM4HnNhTvJ54HwBJ41CJdwG19SF7Tm8Gti3V+xz9XnAHJhL/BGx1FAY0Endg9xUXCwbEq+oeFrIz3ybjG04ZuDbyNdZjG2Cj7deCRqtrPWgBH5QIdg9EIZO7+TVwanRfs6DI/r0icJYzdVw6gNoUxNslwjumGwM0Ie7u6UInpoUnB6OYaTgNPoninwROQXWRivEQIejA8HXp9StEk9eHDYp81BGG/vxRMUOHJBilIefgrUROD8gu0LWqEncAI8EkMvh785n9XnBU8R+faKQk4DXhJPHyyVAv7U5K+SDE/lInzlj1r99k+JD8Cj/7ukRHU9UFfy3C4vdCwF1xoW50yjd2nAmjXBqfm5vSxMMOlFwKinWxjj5UPftDNCDYqXoJA5CAjGuXV17GQ/g5ulwNWwcylLXA62QA3QU0hVwhjXwR/JeImHuxeOmGuQ8HscXyKNBKxQFJDi6kn8XspsaC9vi3CnLMlq79pNP+63srAb7NRdGyeuNBVcoEippKNjvFSTAe0h8ef4i8z/WbCBeVjidbwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:SearchedElement.Target>
+                                        <uix:SearchedElement.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:SearchedElement.Timeout>
+                                      </uix:SearchedElement>
+                                    </uix:NMouseScroll.SearchedElement>
+                                    <uix:NMouseScroll.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://open.spotify.com/playlist/37i9dQZF1E8P1iDxomWAFj" CvElementArea="386, 479, 62, 62" CvType="Icon" DesignTimeRectangle="339, 444, 56, 56" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' parentid='main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='main' tag='SPAN' class='ButtonInner-sc-14ud5tc-0 fGgTkO encore-bright-accent-set' aaname='' /&gt;" Guid="c2567e50-a12f-493c-9c3b-10ac7db9d7cd" ImageBase64="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" InformativeScreenshot="7c6d2d4528620fee323d9a225e817b91.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PERREO FURIOSO • Maria Becerra' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.PointOffset>
+                                          <uix:PointOffset Position="BottomRight" X="59" Y="94" />
+                                        </uix:TargetAnchorable.PointOffset>
+                                      </uix:TargetAnchorable>
+                                    </uix:NMouseScroll.Target>
+                                  </uix:NMouseScroll>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://open.spotify.com/playlist/37i9dQZF1E8KHvPeyih1Hd" CvElementArea="370, 411, 63, 63" CvType="Icon" DesignTimeRectangle="334, 231, 56, 56" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' parentid='main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='main' tag='SPAN' class='ButtonInner-sc-14ud5tc-0 fGgTkO encore-bright-accent-set' aaname='' /&gt;" Guid="12f61f33-9771-46c4-b7c9-ca3226884125" ImageBase64="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" InformativeScreenshot="af23fbd0fe4b54c958878e2ce0dc18e2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Radio AUTOMÁTICO | Spotify Playlist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.PointOffset>
+                                          <uix:PointOffset Position="BottomRight" X="57" Y="89" />
+                                        </uix:TargetAnchorable.PointOffset>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NGetText DisplayName="Get Text 'Maria BecerraPiscina202…'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" TextString="[CantRepros]" Version="V3">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/track/6q6aChVJ5LLXFUSfakwpxW" CvTextArea="733, 464, 329, 13" CvType="AnyWordGroup" DesignTimeRectangle="704, 459, 636, 24" DesignTimeScaleFactor="1" FriendlyName="'Maria BecerraPiscina202…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='Fb61sprjhh75aOITDnsJ' parentid='main' tag='DIV' aaname='' /&gt;" Guid="f0b2f4c6-503d-4d4b-8f66-4c0cb1fb380e" InformativeScreenshot="a02b04a02684b428ac393c1cdfa8254f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Piscina • Maria Becerra, Chencho Corleone, Ovy On The Drums' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                  <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Escribir Datos Output" sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+                                    <ueab:ExcelProcessScopeX.Body>
+                                      <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1369" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,1258" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="Output.xlsx">
+                                            <ueab:ExcelApplicationCard.Body>
+                                              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="ExcelOutput" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,989" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                                  <Sequence.Variables>
+                                                    <Variable x:TypeArguments="x:Int32" Name="lastRow" />
+                                                  </Sequence.Variables>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ueab:WriteCellX Cell="[ExcelOutput.Sheet(&quot;Hoja1&quot;).Cell(&quot;A&quot;+ NroFila.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[CurrentRow(&quot;Artista&quot;).ToString]" />
+                                                  <ueab:WriteCellX Cell="[ExcelOutput.Sheet(&quot;Hoja1&quot;).Cell(&quot;B&quot;+ NroFila.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[DuracionCancion]" />
+                                                  <ueab:WriteCellX Cell="[ExcelOutput.Sheet(&quot;Hoja1&quot;).Cell(&quot;C&quot;+NroFila.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[NombreCancion]" />
+                                                  <ueab:WriteCellX Cell="[ExcelOutput.Sheet(&quot;Hoja1&quot;).Cell(&quot;D&quot;+ NroFila.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[CantRepros.Substring(CantRepros.LastIndexOf(&quot;:&quot;)+3)]" />
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Int32">[nroFila]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Int32">[nroFila+1]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ueab:ExcelApplicationCard.Body>
+                                          </ueab:ExcelApplicationCard>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ueab:ExcelProcessScopeX.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ueab:ExcelProcessScopeX>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inicio'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/album/55onwkSIEu5gEXdiJ6ssFG" CvTextArea="383, 142, 13, 19" CvTextArgument="&lt;" CvType="Text" DesignTimeRectangle="375, 136, 72, 32" DesignTimeScaleFactor="1" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div' idx='2' parentid='main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VgSbatGBB9XwTH2_dsxg' parentid='main' tag='DIV' aaname='' /&gt;" Guid="35da14da-df7f-4b2a-80e1-0a28829932aa" InformativeScreenshot="4342d8a6c3f043a3010da965b46e3134.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='CUANDO HACEMOS EL AMOR • Maria Becerra' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CvTextArea="86, 144, 44, 15" CvTextArgument="Inicio" CvType="Text" DesignTimeRectangle="44, 132, 275, 40" ElementType="Text" FriendlyName="'Inicio'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='link-subtle UYeKN11KAw61rZoyjcgZ active' aaname='Inicio' check:innerText='Inicio' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                        <uix:TargetAnchorable.PointOffset>
+                                          <uix:PointOffset Position="BottomLeft" X="16" Y="-15" />
+                                        </uix:TargetAnchorable.PointOffset>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="668,2280" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="626,237" sap2010:WorkflowViewState.IdRef="NMouseScroll_5" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                                    <uix:NMouseScroll.SearchedElement>
+                                      <uix:SearchedElement>
+                                        <uix:SearchedElement.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/album/6qW93Zylfk7oxZ8ZzwjkL5" CvElementArea="386, 391, 62, 61" CvType="Icon" DesignTimeRectangle="389, 395, 56, 56" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' parentid='main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='main' tag='SPAN' class='ButtonInner-sc-14ud5tc-0 fGgTkO encore-bright-accent-set' aaname='' /&gt;" Guid="1ca75e9b-22b4-43ad-b40f-e03c946dede4" ImageBase64="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" InformativeScreenshot="ac730bbc615d2db3a1b5e4cebb00e9be.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ASI ES LA VIDA • Enrique Iglesias, Maria Becerra' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvElementArea="472, 400, 41, 40" CvType="Icon" DesignTimeRectangle="477, 407, 32, 32" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl aria-role='img' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' parentid='main' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='img' type='' parentid='main' tag='svg' class='Svg-sc-ytk21e-0 cqasRA' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVCSURBVFhHtVdbT1RJED6/QDTeHrybaLwLDDMDcWAEBQQEg8gIskoIJiIsCxt5WBNBFAwiCygCq8hNQfiZvVU1XTXVPecMvvjwTdflq0v36T6nJ0ju32+SRUU5aD1KRuzb5+q/Cs4TER8k4IcABALrbPPlMBvLUb4wP9s8OdeQcmCnKO81+sDZO7q248oU8ls9oAaYqBykW1SfOGHa4nHzrLXVPKmtNbfPns35o2YNY/r4cXMf4u6XlZnUkSP5fN2gtQdi9BMDehoazMLMjNnd3c3D6pcvpr+9PZtUTag1FjPjL16Yr4uLeTGz795lY7w6AogP4rYRPd46fdoszc/nJQzD9OvXpvrkSZM6etS8Ghw0Ozs7oTyNTx8+mNpz52gR4rYZGkHPNWQddUBcX1lxErwZGTFPW1pMe0WF6b1714wODZnN9XXxb6yuEljfXFsjztPmZvPo5k0z0ttLTbCfOBBfc+oU1RTwCmEzPM5OTkrQ8seP1CD5Lbj58kOHzD99fU4RxNjwsEkfO+asOMc0XrxoPk1PC/ffiQmHhxzaQ1ysu75eyJ9nZ00aNjPtD8WhmSj5j5oa83Vpyfy3sGC6QGYe+TFW6XGrY26uk7lxw6kRCBk6fD86KsSmK1dyiRQnVFZ6mTcyRIex/sIFqYOPVvOkoQp4BNtbW0TCR4WBemUcRNk1wuKVPj81RbW+b2yY8oMHxS4NNV+/Ll0PdnWZMmvHmaGsdb06siKs4wiFxR4SjzLW4HpN166JP2Cho6pKCP0PHwrBWQ2W1Ug8XwdIvLU7MmAAanC9TColdmoIgUYm/NnZmZ0JEPQMHfh21qPsnqxX6AG8TtAnDWHneqPhy06SoB8bUzLyw/z+SBOyutgsZt6+lXp1588LN4ghwQbg8WVS49WrToIoxHDWABpZx1FxHIC/paRE6qwsL1Nt5ssjQ/RnMkJ8PzaW7ZqBnLDRh80l0DYrT4+PS52+tjbHTyvESMLxW5ybE/IA7CWcMflx5hCg9RgWYN1HmB1sAx0dkh+/lwmoqTkBd40KyncuX5YAREc6nfVrnuJzIt/OPi1nKiud3HcuXaIYzXVWiACzeASfAA7a+vHDNECT2q/5paBzwkKoh+8Y5uK8WAMn6eeTTa2NqA89fizBePephMsWJdB8rTNsDu2vgm8ibl7O9xfk1n5dPyi1QqntlHUkT758KUnm4FWfPHxY/DgyJA5yODrkSMAniT8TiAnIiQ04PDVmHxl2yFB6EpLpG+M43IvYxwX9hOxnGWM4HnNhTvJ54HwBJ41CJdwG19SF7Tm8Gti3V+xz9XnAHJhL/BGx1FAY0Endg9xUXCwbEq+oeFrIz3ybjG04ZuDbyNdZjG2Cj7deCRqtrPWgBH5QIdg9EIZO7+TVwanRfs6DI/r0icJYzdVw6gNoUxNslwjumGwM0Ie7u6UInpoUnB6OYaTgNPoninwROQXWRivEQIejA8HXp9StEk9eHDYp81BGG/vxRMUOHJBilIefgrUROD8gu0LWqEncAI8EkMvh785n9XnBU8R+faKQk4DXhJPHyyVAv7U5K+SDE/lInzlj1r99k+JD8Cj/7ukRHU9UFfy3C4vdCwF1xoW50yjd2nAmjXBqfm5vSxMMOlFwKinWxjj5UPftDNCDYqXoJA5CAjGuXV17GQ/g5ulwNWwcylLXA62QA3QU0hVwhjXwR/JeImHuxeOmGuQ8HscXyKNBKxQFJDi6kn8XspsaC9vi3CnLMlq79pNP+63srAb7NRdGyeuNBVcoEippKNjvFSTAe0h8ef4i8z/WbCBeVjidbwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:SearchedElement.Target>
+                                        <uix:SearchedElement.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:SearchedElement.Timeout>
+                                      </uix:SearchedElement>
+                                    </uix:NMouseScroll.SearchedElement>
+                                  </uix:NMouseScroll>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="626,157" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/album/6qW93Zylfk7oxZ8ZzwjkL5" CvElementArea="386, 391, 62, 61" CvType="Icon" DesignTimeRectangle="470, 350, 56, 56" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' parentid='main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='main' tag='SPAN' class='ButtonInner-sc-14ud5tc-0 fGgTkO encore-bright-accent-set' aaname='' /&gt;" Guid="26a98104-4c54-4c4e-8f9b-807f4848cdd1" ImageBase64="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" InformativeScreenshot="57b9ab6ce70c38c652d9e43845768f1a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ASI ES LA VIDA • Enrique Iglesias, Maria Becerra' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CvElementArea="472, 400, 41, 40" CvType="Icon" DesignTimeRectangle="557, 362, 32, 32" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl aria-role='img' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' parentid='main' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='img' type='' parentid='main' tag='svg' class='Svg-sc-ytk21e-0 cqasRA' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVCSURBVFhHtVdbT1RJED6/QDTeHrybaLwLDDMDcWAEBQQEg8gIskoIJiIsCxt5WBNBFAwiCygCq8hNQfiZvVU1XTXVPecMvvjwTdflq0v36T6nJ0ju32+SRUU5aD1KRuzb5+q/Cs4TER8k4IcABALrbPPlMBvLUb4wP9s8OdeQcmCnKO81+sDZO7q248oU8ls9oAaYqBykW1SfOGHa4nHzrLXVPKmtNbfPns35o2YNY/r4cXMf4u6XlZnUkSP5fN2gtQdi9BMDehoazMLMjNnd3c3D6pcvpr+9PZtUTag1FjPjL16Yr4uLeTGz795lY7w6AogP4rYRPd46fdoszc/nJQzD9OvXpvrkSZM6etS8Ghw0Ozs7oTyNTx8+mNpz52gR4rYZGkHPNWQddUBcX1lxErwZGTFPW1pMe0WF6b1714wODZnN9XXxb6yuEljfXFsjztPmZvPo5k0z0ttLTbCfOBBfc+oU1RTwCmEzPM5OTkrQ8seP1CD5Lbj58kOHzD99fU4RxNjwsEkfO+asOMc0XrxoPk1PC/ffiQmHhxzaQ1ysu75eyJ9nZ00aNjPtD8WhmSj5j5oa83Vpyfy3sGC6QGYe+TFW6XGrY26uk7lxw6kRCBk6fD86KsSmK1dyiRQnVFZ6mTcyRIex/sIFqYOPVvOkoQp4BNtbW0TCR4WBemUcRNk1wuKVPj81RbW+b2yY8oMHxS4NNV+/Ll0PdnWZMmvHmaGsdb06siKs4wiFxR4SjzLW4HpN166JP2Cho6pKCP0PHwrBWQ2W1Ug8XwdIvLU7MmAAanC9TColdmoIgUYm/NnZmZ0JEPQMHfh21qPsnqxX6AG8TtAnDWHneqPhy06SoB8bUzLyw/z+SBOyutgsZt6+lXp1588LN4ghwQbg8WVS49WrToIoxHDWABpZx1FxHIC/paRE6qwsL1Nt5ssjQ/RnMkJ8PzaW7ZqBnLDRh80l0DYrT4+PS52+tjbHTyvESMLxW5ybE/IA7CWcMflx5hCg9RgWYN1HmB1sAx0dkh+/lwmoqTkBd40KyncuX5YAREc6nfVrnuJzIt/OPi1nKiud3HcuXaIYzXVWiACzeASfAA7a+vHDNECT2q/5paBzwkKoh+8Y5uK8WAMn6eeTTa2NqA89fizBePephMsWJdB8rTNsDu2vgm8ibl7O9xfk1n5dPyi1QqntlHUkT758KUnm4FWfPHxY/DgyJA5yODrkSMAniT8TiAnIiQ04PDVmHxl2yFB6EpLpG+M43IvYxwX9hOxnGWM4HnNhTvJ54HwBJ41CJdwG19SF7Tm8Gti3V+xz9XnAHJhL/BGx1FAY0Endg9xUXCwbEq+oeFrIz3ybjG04ZuDbyNdZjG2Cj7deCRqtrPWgBH5QIdg9EIZO7+TVwanRfs6DI/r0icJYzdVw6gNoUxNslwjumGwM0Ie7u6UInpoUnB6OYaTgNPoninwROQXWRivEQIejA8HXp9StEk9eHDYp81BGG/vxRMUOHJBilIefgrUROD8gu0LWqEncAI8EkMvh785n9XnBU8R+faKQk4DXhJPHyyVAv7U5K+SDE/lInzlj1r99k+JD8Cj/7ukRHU9UFfy3C4vdCwF1xoW50yjd2nAmjXBqfm5vSxMMOlFwKinWxjj5UPftDNCDYqXoJA5CAjGuXV17GQ/g5ulwNWwcylLXA62QA3QU0hVwhjXwR/JeImHuxeOmGuQ8HscXyKNBKxQFJDi6kn8XspsaC9vi3CnLMlq79pNP+63srAb7NRdGyeuNBVcoEippKNjvFSTAe0h8ef4i8z/WbCBeVjidbwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                        <uix:TargetAnchorable.PointOffset>
+                                          <uix:PointOffset Position="BottomRight" X="16" Y="86" />
+                                        </uix:TargetAnchorable.PointOffset>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NGetText DisplayName="Get Text 'Maria BecerraPiscina202…'" sap:VirtualizedContainerService.HintSize="626,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" TextString="[CantRepros]" Version="V3">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/track/6q6aChVJ5LLXFUSfakwpxW" CvTextArea="733, 464, 329, 13" CvType="AnyWordGroup" DesignTimeRectangle="704, 459, 636, 24" DesignTimeScaleFactor="1" FriendlyName="'Maria BecerraPiscina202…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='Fb61sprjhh75aOITDnsJ' parentid='main' tag='DIV' aaname='' /&gt;" Guid="f0b2f4c6-503d-4d4b-8f66-4c0cb1fb380e" InformativeScreenshot="a02b04a02684b428ac393c1cdfa8254f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Piscina • Maria Becerra, Chencho Corleone, Ovy On The Drums' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                  <Sequence DisplayName="Repros Sin Puntos ni Comas" sap:VirtualizedContainerService.HintSize="626,25" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[cantRepros]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[cantRepros.Substring(cantRepros.LastIndexOf(":")+3)]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[cantRepros]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[cantRepros.Replace(",","")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[cantRepros]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[cantRepros.Replace(".","")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                  <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,1456" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+                                    <ueab:ExcelProcessScopeX.Body>
+                                      <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1369" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,1258" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="Output.xlsx">
+                                            <ueab:ExcelApplicationCard.Body>
+                                              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="ExcelOutput" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,989" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                                  <Sequence.Variables>
+                                                    <Variable x:TypeArguments="x:Int32" Name="lastRow" />
+                                                  </Sequence.Variables>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ueab:WriteCellX Cell="[ExcelOutput.Sheet(&quot;Hoja1&quot;).Cell(&quot;A&quot;+ NroFila.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[CurrentRow(&quot;Artista&quot;).ToString]" />
+                                                  <ueab:WriteCellX Cell="[ExcelOutput.Sheet(&quot;Hoja1&quot;).Cell(&quot;B&quot;+ NroFila.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[DuracionCancion]" />
+                                                  <ueab:WriteCellX Cell="[ExcelOutput.Sheet(&quot;Hoja1&quot;).Cell(&quot;C&quot;+NroFila.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[NombreCancion]" />
+                                                  <ueab:WriteCellX Cell="[ExcelOutput.Sheet(&quot;Hoja1&quot;).Cell(&quot;D&quot;+ NroFila.ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[cantRepros]" />
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Int32">[nroFila]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Int32">[nroFila+1]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ueab:ExcelApplicationCard.Body>
+                                          </ueab:ExcelApplicationCard>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ueab:ExcelProcessScopeX.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ueab:ExcelProcessScopeX>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                          <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                          <Sequence DisplayName="Siguiente Cancion" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/artist/1DxLCyH42yaHKGK3cl5bvG" CvElementArea="361, 133, 38, 37" CvTextArea="372, 142, 14, 19" CvType="Icon" DesignTimeRectangle="364, 136, 32, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl aria-label='Volver' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Volver' tag='BUTTON' type='' class='ql0zZd7giPXSnPg75NR0' aaname='' /&gt;" Guid="1cdc412c-b796-4bae-b980-a3a2a950daf0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG2SURBVFhH1ZfdSsNAEEZ9CEURrHdpij/Q2mpbKRQKIngp9B2rr1Bfp5LkIUa+woRN8iXZXbawXhwI3d2Zk53NJD3bvG0lJv6/0HrzKZPpWpJ0LDe3iVxeDeT84voIrvEbxjAHc1mMLqyFXlcfx0Sa3BaswVoWk2ElNLqb0WQuIAaLXadTCHeGErAEPiBW3261Cs2X75XzEQrERGyWE1Ah3MUpZBTEbtspKhSyTG0gB8vdEApxgG1hB70ihG1kC22ZPS9l9/UtyfCejjPqpasI+fQZBTJFUcjh8OskhJymQymErsoW2PA0XUie55JlmYwnL3ROF2ZHL4XQ6tnkPkwZ7BKb0wdyN4R8yhVCBphlK4VcH/VQMsBsAaWQSyMMKQOQuyHEJjLmi1VQGSV+oehKFt2hju6xj64xRvfqAD5lU7A7+nIdpg90DsMsF6gIhfj82O9/JB090nFG5+cHiOoDTXFtAT6Yj7oJFcI2ujRKVxC7XiqFCoGo/gYpuIuQ5UOstp1ROoWUEAedHWCGlRDAnfn0Kazp2xUTayEFXRWtHolQAvOc4Rq/YQxzzA5si7PQqYlMaCt/i8rd5u1Wg/sAAAAASUVORK5CYII=" InformativeScreenshot="cb08ececce7016e0b347676b59f16a5b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Maria Becerra | Spotify' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="372, 142, 55, 19" CvTextArgument="&lt; &gt;" CvType="Text" DesignTimeRectangle="364, 136, 72, 32" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div' idx='2' parentid='main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VgSbatGBB9XwTH2_dsxg' parentid='main' tag='DIV' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://open.spotify.com/intl-es/artist/1DxLCyH42yaHKGK3cl5bvG" CvElementArea="361, 133, 38, 37" CvTextArea="372, 142, 14, 19" CvType="Icon" DesignTimeRectangle="364, 136, 32, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl aria-label='Volver' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Volver' tag='BUTTON' type='' class='ql0zZd7giPXSnPg75NR0' aaname='' /&gt;" Guid="1cdc412c-b796-4bae-b980-a3a2a950daf0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG2SURBVFhH1ZfdSsNAEEZ9CEURrHdpij/Q2mpbKRQKIngp9B2rr1Bfp5LkIUa+woRN8iXZXbawXhwI3d2Zk53NJD3bvG0lJv6/0HrzKZPpWpJ0LDe3iVxeDeT84voIrvEbxjAHc1mMLqyFXlcfx0Sa3BaswVoWk2ElNLqb0WQuIAaLXadTCHeGErAEPiBW3261Cs2X75XzEQrERGyWE1Ah3MUpZBTEbtspKhSyTG0gB8vdEApxgG1hB70ihG1kC22ZPS9l9/UtyfCejjPqpasI+fQZBTJFUcjh8OskhJymQymErsoW2PA0XUie55JlmYwnL3ROF2ZHL4XQ6tnkPkwZ7BKb0wdyN4R8yhVCBphlK4VcH/VQMsBsAaWQSyMMKQOQuyHEJjLmi1VQGSV+oehKFt2hju6xj64xRvfqAD5lU7A7+nIdpg90DsMsF6gIhfj82O9/JB090nFG5+cHiOoDTXFtAT6Yj7oJFcI2ujRKVxC7XiqFCoGo/gYpuIuQ5UOstp1ROoWUEAedHWCGlRDAnfn0Kazp2xUTayEFXRWtHolQAvOc4Rq/YQxzzA5si7PQqYlMaCt/i8rd5u1Wg/sAAAAASUVORK5CYII=" InformativeScreenshot="cb08ececce7016e0b347676b59f16a5b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Maria Becerra | Spotify' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="372, 142, 55, 19" CvTextArgument="&lt; &gt;" CvType="Text" DesignTimeRectangle="364, 136, 72, 32" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div' idx='2' parentid='main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='VgSbatGBB9XwTH2_dsxg' parentid='main' tag='DIV' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68abfc71-c445-4531-8de3-2e3311482ec1" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://open.spotify.com/search/Camilo" CvElementArea="727, 656, 23, 24" CvType="Icon" DesignTimeRectangle="731, 660, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;footer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg' idx='3' parentid='main' tag='svg' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl type='' class='Svg-sc-ytk21e-0 dYnaPI' parentid='main' tag='svg' aaname='' /&gt;" Guid="729f967f-d972-4850-94c3-ad542fd17871" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADMSURBVDhPxZQ9CoQwEIUlffpUXsGTeAZtvUNKPYMhhY2FreIB32YWFic6iLsJbOAr5s2bByE/RVjIjCimIIopHMU8zxiGAWVZcoOI9x77vmMcx3PvKMhAbNuGruugtebGiI+XOPVkE7EsC+q6hlKKD1y8p55s4tC2qqriQ1Gf6wHZJGGthTHm4uUZgeeBxLquaNs20nhG4LtACZ4R+HMgbblpmkjjGYHngdkOJdu1yXaxsz29aZrQ9/2jz8E59w67/RwyIYopiOKPFHgBiZyv7uu1GwYAAAAASUVORK5CYII=" InformativeScreenshot="463376edfeb16b754d53b59f4befcfef.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Spotify – Buscar' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                      <uix:Target DesignTimeRectangle="423, 652, 537, 57" ElementType="InputBox" FriendlyName="'0:21Cambiar punto'" FullSelectorArgument="&lt;webctrl aria-label='Controles del reproductor' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Controles del reproductor' tag='DIV' type='' class='player-controls' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                      <uix:Target DesignTimeRectangle="959, 664, 403, 32" ElementType="InputBox" FriendlyName="'Cambiar el volumen1'" FullSelectorArgument="&lt;webctrl class='mwpJrmCgLlVkJVtWjlI1' parentid='main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mwpJrmCgLlVkJVtWjlI1' parentid='main' tag='DIV' type='' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                      <uix:Target CvElementArea="767, 657, 23, 22" CvType="Icon" DesignTimeRectangle="765, 655, 27, 26" ElementType="Icon" FriendlyName="'msedge.exe Spotify'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF1SURBVEhL7ZS9isJAFIVV1E479TFSiNrYCCGFYGelXSp9ASvBNDY2WmkqIVqq+PeAZ3Mv6zLZPcRdYaw28DXfufdOMkwmEz94I1TagkpbUGkLKm1BpS2oVFzXxWq1wul0wv1+T0VqlsslOp0OnfUJlej1ejpku91iNBphMBikIjVSKz3dbpfOjKESYRhit9shm83SnCG1URRhvV7TPIZK3ZbxeEyzNKTneDzSLIZK3Q7ZHpalIT3Sy7IYKv8X+8HLiw2HQ5o9kNNXq9USTnput1vCGVCJ/X6P+XxOM6FQKCAIAhwOB+RyuS8vPXL8zVoDKjGbzfQN5RYplUqJrFgs6tDr9Yp2u62uXC7D8zztmU6niXoDKlGtVvXHlu188MhkIdObbDYbVCqVxCwDKpV8Po9ms4l+v584LK1WC5fLRb/M933NpKbRaGiPOeMbVD6lXq/jfD5jsVj85Uqj8lc4joPJZPKexV6ASltQaQsqbUGlBTL4AGdJWW6TBBAlAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[BucleCanciones]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[BucleCanciones - 1]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </Sequence>
+                      </ui:InterruptibleDoWhile.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:InterruptibleDoWhile>
+                    <Assign sap:VirtualizedContainerService.HintSize="526,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[BucleCanciones]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">5</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Ordenar Excel" sap:VirtualizedContainerService.HintSize="854,25" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_4">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,704" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,593" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" WorkbookPath="Output.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="ExcelOutputSorted" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,324" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataTable" Name="vDtbOutputSorted" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:SortX DisplayName="Sort Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,213" sap2010:WorkflowViewState.IdRef="SortX_1" Range="[ExcelOutputSorted.Sheet(&quot;Hoja1&quot;)]">
+                              <ueab:SortX.Body>
+                                <ActivityAction>
+                                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:SortColumnX ColumnName="Repros" DisplayName="Sort By Column" sap:VirtualizedContainerService.HintSize="382,62" sap2010:WorkflowViewState.IdRef="SortColumnX_1" SortDirection="Descending" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:SortX.Body>
+                            </ueab:SortX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIWSURBVFhHxZddlcIwEEZBAoeXfUUCEiphJSABCShAwkpYCUhAAhKQ0P1uNtNNwyRpoZx9uAdokplvfpKGVd/366l8bLedOIlL5B6x34x13toSTQEyuImGcdRPhLms2Xg2U6oCopE5jnOCEM+24QrQIqK+RiNLgC03Gw8CNHEvXom6BDb3ub+RAE0g8nc4N7A9ykQuYMm0l7imPgcBGqDhvAXvYGjMIEAPpqT+Jmy/53jzawylMAFe9F/iIB4ax0PzCIKD6ii+RSugkAUTkE8+pMafRXY+BWJS28adOSt9QXU+eEyM7IQdwSXIFHPcva7n2PCEdAjAQD4A1Ja6e2M12Eln8fBO0LO8X04IeKaJpkIAQzn1Pfd1aQmgN0gdWSLFHtSZ8VrjIcQ7Y4KA0qJzmr6paB2i2EGtXQC3moCwTfRJA1mUQMYAJ/YMp6MG5Hccqwm5t0owtwlJM+fALhNSEtHsgVcgQ2SvKYA0eYMGUVm6bb8b/OZ5rQFrJQjbEEPeIEw6hg3mi6kNCF3pKDaIziIslcoakmyERuRTcBh5843fozguaJVhDqH20W7tfjF6GdUa5VlqzvH19zqOIpbMQovxhSQRUVO9FP6VDDT4jlKkDKk3RgJAE/7vWm5oIplYshzYci8rrgBDi2jMV7LB2qHhPKoCQAbIxlwhwbFwo05pCkiRQY5tDHP6AY7S6zpjM/6e9+sf/KRQcgs6PowAAAAASUVORK5CYII=" InformativeScreenshot="03e5ca8b6294af3a9ffa4c66284ceb43.jpg" Selector="&lt;html app='msedge.exe' title='Iniciar sesión - Spotify' /&gt;" Title="Reproductor web de Spotify: música para todo el mundo" Url="https://accounts.spotify.com/es/login?continue=https%3A%2F%2Fopen.spotify.com%2Fintl-es" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
